@@ -1,10 +1,8 @@
 import requests, random
+i="qwertyuiopasdfghjklzxcvbnm1234567890"
 while True:
-    u = "".join(random.choice(l)for i in range(1))
-    us = "".join(random.choice(l)for i in range(1))
-    use = "".join(random.choice(l)for i in range(1))
-    user = "".join(random.choice(l)for i in range(1))
-    user = f'{u}_{us}_{use}'
+    u = "".join(random.choice(l)for i in range(5))
+    user = u
     url = 'https://www.instagram.com/api/v1/web/accounts/web_create_ajax/attempt/'
     headers = {
     'accept': '*/*',
